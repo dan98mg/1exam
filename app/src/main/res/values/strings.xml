@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">1exam</string>
+    <string name="startFee">Start Fee</string>
+    <string name="tripDistanceText">Trip Distance</string>
+    <string name="feekm">Fee per Km</string>
+    <string name="button">Estimate The Taxi Fee</string>
+    <string name="final">Fee</string>
+    <string name="finalFee">Fee</string>
+</resources>

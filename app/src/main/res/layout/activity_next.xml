@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:id="@+id/feeStartInput"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|top"
+            android:layout_marginStart="60dp"
+            android:gravity="right|top"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/feeTxt"
+            android:layout_width="157dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|left"
+            android:gravity="top|left"
+            android:text="@string/startFee" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/taxi_background" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:foregroundGravity="top|left"
+            android:gravity="top|left"
+            android:text="@string/tripDistanceText" />
+
+        <TextView
+            android:id="@+id/disInput"
+            android:layout_width="153dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|top"
+            android:foregroundGravity="top|right"
+            android:gravity="right|top"
+            android:text="TextView" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <TextView
+            android:id="@+id/feeKMTxt"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|left"
+            android:text="@string/feekm" />
+
+        <TextView
+            android:id="@+id/feeKMInput"
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|top"
+            android:foregroundGravity="top|right"
+            android:gravity="right|top"
+            android:text="TextView" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="btnClick"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
+    <TextView
+        android:id="@+id/feeFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/finalFee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
